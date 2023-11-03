@@ -1,9 +1,20 @@
+<!-- Đây là trang chính
+    Viết code nhớ comment
+    Anh em thêm/sửa/xóa code thì nhớ comment lại 
+    Và push code lên git
+-->
+<!-- 
+    git add .
+    git commit -m "comment"
+    git push origin master
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trang chu</title>
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
@@ -21,25 +32,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,800&family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- Javácript -->
+    <!-- Javascript -->
     <script src="/main.js"></script>
 
 </head>
 
-<!-- Đây là trang chính
-    Viết code nhớ comment
-    Anh em thêm/sửa/xóa code thì nhớ comment lại 
-    Và push code lên git
--->
-<!-- 
-    git add .
-    git commit -m "comment"
-    git push origin master
- -->
-
 <body>
     <header class="header_nike">
-        <!-- place navbar here -->
+        <!-- thanh navbar co chua thanh tim kiem -->
         <div class="navbar-brand">
           <a href="#">Home</a>
           <a href="#">About</a>
@@ -47,11 +47,15 @@
           <a href="#">Contact</a>
         </div>
         <div class="search">
-          <input type="text" class="search-input" placeholder="Search...">
-          <a href=""><i class="fa fa-search" id="ico-search"></i></a>
+          <form method="POST" action="/searchData">
+            <input type="text" name="searchInput" class="search-input" placeholder="Search...">
+            <a href=""><i class="fa fa-search" id="ico-search"></i></a>
+            <button type="submit">Search</button>
+
+          </form>
         </div>
       </header>
-  
+      <!-- Noi dung chinh va Login -->
       <main>
         <div class="home">
           <div class="intro">
