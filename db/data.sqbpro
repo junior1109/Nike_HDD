@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="D:/2023-2024-1/python/db/data.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1100"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="0" parent="0"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,4:mainnike"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">create table nike
+(
+	id int PRIMARY KEY,
+	product varchar(100),
+	brand varchar(200),
+	rating varchar(10),
+	color varchar(100),
+	price varchar(100),
+	details varchar(1000),
+	picture varchar(1000)
+)
+go
+
+insert into nike
+VALUES
+(
+	2, 'Air Jordan 1 High OG &quot;Mauve', 'Jordan', '4.8', 'white-pink', '$180', 'Size: 37, 38, 39, 40', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c61d125f-e376-4341-bb46-9d7bfe4ccc63/air-jordan-1-high-og-mauve-mens-shoes-JHpxkn.png'
+),
+(
+	3, 'Air Jordan 1 Hi FlyEase', 'Jordan', '5.0', 'white-red-black', '$150', 'Size: full', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8411596e-aa90-4a1f-8c7a-fed7d4f39bd5/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png'
+),
+(
+	4, 'Jordan True Flight', 'Jordan', '5.0', 'black-blue', '$150', 'Size: full, best seller', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b43240c0-7912-4bdc-be11-d701f89c29a2/jordan-true-flight-mens-shoes-ODLzlq.png'
+),
+(
+	5, 'Air Jordan 1 Element', 'Jordan', '5.0', 'mix color', '$200', 'Size: full, sale off 25%', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/a79fb0e3-0459-4238-9697-60dda465ef2b/air-jordan-1-element-shoes-c5Dc04.png'
+),
+(
+	6, 'Nike Air Max Pulse', 'Air', '4.8', 'black', '$150', 'Size: 40, 41, 42, 43, best seller', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8535fa44-afb6-4a64-aac4-3a9b769af79e/air-max-pulse-mens-shoes-DWTVpN.png'
+),
+(
+	7, 'Nike Air Max 90', 'Air', '4.9', 'white', '$130', 'Size: full, sale off 25%', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bhwrvokud9flh34cchb8/air-max-90-mens-shoes-6n3vKB.png'
+),
+(
+	8, 'Nike Air Max 90 Premium', 'Air', '4.7', 'mix color', '$75', 'Size: 40, 41, sale off 49%', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/630805bf-dd98-4005-a8cd-c20f96cf96b3/air-max-90-premium-mens-shoes-1bT55Z.png'
+),
+(
+9, 'Nike Air Max 97', 'Air', '5.0', 'white', '$120', 'Size: full, sale off 31%', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/87b24be9-403c-457e-ba87-9b648e32078c/air-max-97-mens-shoes-LJmK45.png'
+),
+(
+	10, 'Nike Air VaporMax Plus', 'Air', '4.6', 'black', '$210', 'Size: 41-46, sale off 25%', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u6w7hqga4172ieosf48b/air-vapormax-plus-mens-shoes-nC0dzF.png'
+),
+(
+	11, 'Nike Air Force 1 LE', 'Air Force 1', '5.0', 'white', '$90', 'Size: full, best seller', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d9f1d9ee-a848-4a36-aab9-48b241078ebb/air-force-1-le-big-kids-shoes-3JNSvS.png'
+),
+(
+	12, 'Nike Air Force 1 LV8', 'Air Force 1', '4.9', 'mix color', '$100', 'Size: 36-43, member product, best saller', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/20746c44-2a2f-4785-a2a7-dcfc20bbdeae/air-force-1-lv8-big-kids-shoes-jnS2zV.png'
+),
+(
+	13, 'Nike Air Force 1 Shadow', 'Air Force 1', '5.0', 'mix color', '$140', 'Size: 35-40, sale of 25%', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e9e110a1-d23b-4d85-995b-071e33cca484/air-force-1-shadow-womens-shoes-kTgn9J.png'
+),
+(
+	14, 'Nike Air Force 1 Low By You', 'Air Force 1', '4.8', 'mix color', '$135', 'Size: full, Customize', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1415893c-4f2e-4761-8fb7-fa141335becc/air-force-1-07-lv8-mens-shoes-m3vNSR.png'
+),
+(
+	15, 'Nike Air Force 1 Mid x Of-White', 'Air Force 1', '4.9', 'yellow-white', '205$', 'Size: full, hot, Launching in SNKRS', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/060a9c0b-03b1-4dca-9376-6cbf3d84d880/air-force-1-mid-x-off-white%E2%84%A2-mens-shoes.png'
+),
+(
+	16, 'Nike SB Force 58 Premium', 'Nike SB', '5.0', 'white', '$85', 'Size: full, hot, sale off 25%', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7564ab4b-8cd3-4f0c-a31f-1765f7a4f104/sb-force-58-premium-skate-shoes-qp1TSM.png'
+),
+(
+	17, 'Nike SB Chron 2', 'Nike SB', '5.0', 'mix color', '$75', 'Size: 36-43', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/639db74a-e965-489a-ba91-5de35e97d67d/sb-chron-2-skate-shoes-71Mh0H.png'
+),
+(
+	18, 'Nike SB Pogo', 'Nike SB', '4.9', 'mix color', '$90', 'Size: full, hot, bess seller', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3c999c55-2e5f-42ba-b0ff-9e7742fc3975/sb-pogo-skate-shoes-GxMsNp.png'
+),
+(
+	19, 'Nike BRSB', 'Nike SB', '4.8', 'mix color', '$90', 'Size: 40-45, sale off 25%', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/84a5c4e6-18d9-41eb-a3f4-5c29a630d41a/brsb-skate-shoes-4zkJzG.png'
+),
+(
+	20, 'Nike SB Zoom Janoski OG+', 'Nike SB', 'green-mix', '$95', 'Size: full, best seller', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ec01196b-0f5f-4e00-bbe9-3354be09bd07/sb-zoom-janoski-og-shoes-rKm5cn.png'
+)
+
+SELECT * FROM nike
+(
+	1, 'Air Jordan 1 Mid', 'Jordan', '4.9', 'blue-white-red', '$100.97', 'Size: full, best seller', 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0f77e8d9-311f-42a4-8951-478ddf1e6da4/air-jordan-1-mid-womens-shoes-Kg3nnj.png'
+),</sql><current_tab id="0"/></tab_sql></sqlb_project>

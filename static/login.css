@@ -72,9 +72,115 @@ header {
     position: relative;
     padding: 20px 30px;
 }
+.title, .content {
+    margin: 40px;
+}
+.content {
+    display: block;
+    /* text-align: center; */
+}
+.content h3 {
+    font-weight: 300;
+    font-size: 12px;
+}
 
+.icon >a {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #fff;
+}
 
+.box-login {
+    width: 34%;
+    height: 100%;
+    backdrop-filter: blur(12px);
+    position: absolute;
+    right: 0;
+    align-items: center;
+    text-align: center;
 
+}
+
+.sub-login {
+    padding: 40px 30px;
+    display: grid;
+    row-gap: 5%;
+    
+
+}
+.login .sub-login >h2, 
+.input,
+.checkbox {
+    margin-bottom: 20px;
+}
+
+.input {
+    position: relative;
+}
+.email,
+.password {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+::placeholder {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+.login .input >i {
+    position: absolute;
+    right: 0;
+    top: 5px;
+
+}
+
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox >a {
+    text-decoration: none;
+    color: #fff;
+}
+.checkbox >a, .checkbox >label {
+    font-weight: 200;
+    font-size: 14px;
+}
+.btn-button {
+    margin-bottom: 10px;
+}
+
+.singup {
+    display: flex;
+    justify-content: center;
+}
+.login .singup >p {
+    font-weight: 200;
+    font-size: 14px;
+}
+.login .singup > a {
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+.btn-SignIn {
+    height: 40px;
+    width: 100%;
+    background-color: #cc3030;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+
+}
 
 
 footer {

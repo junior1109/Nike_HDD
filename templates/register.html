@@ -49,7 +49,7 @@
            <div class="intro">
              <h1 class="title">_Junior203_</h1>
              <div class="content">
-               <h2 class="cnt-heading">Hi, Friend</h2>
+               <h2 class="cnt-heading">Hi, Welcome to Nike Shoes</h2>
                <h3 class="cnt-sub-heading">Contact me if you need</h3>
                <!-- <p class="cnt-paragraph">fhasjhfkasjdhflkajdjahsDFKLJA<br>JSDHFKSJDHFLKASJDHFAKSLJDFHAKSDJ</p> -->
                <div class="icon">
@@ -64,21 +64,23 @@
              <div class="logout">
                <div class="sub-logout">
                  <h2>Sign Up</h2>
-                 <div class="input">
-                    <input type="text" class="username" placeholder="User Name" required>
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                 </div>
-                 <div class="input">
-                   <input type="text" class="email" placeholder="Email" required>
-                   <i class="fa fa-envelope"></i>
-                 </div>
-                 <div class="input">
-                   <input type="text" class="password" placeholder="Password" required>
-                   <i class="fa fa-lock"></i>
-                 </div>
-                 <div class="btn-button">
-                   <button class="btn-SignUp">Sign Up</button>
-                 </div>
+                 <form action="{{ url_for('register') }}" method="post">
+                    <div class="input">
+                        <input type="text" class="username" placeholder="User Name" required>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+                    <div class="input">
+                      <input type="text" class="email" placeholder="Email" required>
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="input">
+                      <input type="text" class="password" placeholder="Password" required>
+                      <i class="fa fa-lock"></i>
+                    </div>
+                    <div class="btn-button">
+                      <button class="btn-SignUp" type="submit">Sign Up</button>
+                    </div>
+                 </form>
                </div>
              </div>
            </div>
