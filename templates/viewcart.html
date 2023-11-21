@@ -32,7 +32,7 @@
     </div>
     <div class="container_cart">
         <h1>Shopping Cart</h1>
-        <form action="{{ url_for('update_cart') }}" method="POST">
+        <form action="{{ url_for('your_cart.update_cart') }}" method="POST">
             <table class="cart">
                 <thead>
             <tr>
@@ -68,7 +68,7 @@
             </table>
             <div class="buy-btn">
                 <input class="delete-btn" id="update" type="submit" value="Update Cart">
-                <form action="{{ url_for('proceed_cart') }}" method="post">
+                <form action="{{ url_for('your_cart.proceed_cart') }}" method="post">
                     <input class="delete-btn" type="submit" value="Proceed Cart">
                 </form>
             </div>
