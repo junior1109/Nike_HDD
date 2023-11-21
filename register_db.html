@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_cart.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration</h1>
+        <form method="POST" action="{{ url_for('register') }}">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <span class="validation-message">{{ username_error }}</span>
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <span class="validation-message">{{ email_error }}</span>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span class="validation-message">{{ password_error }}</span>
+            <br>
+            <button type="submit">register</button>
+        </form>
+        <p class="success-message">{{ Registration_success }}</p>
+    </div>
+</body>
+</html>
