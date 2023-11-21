@@ -6,3 +6,12 @@ function deleteNote(noteId) {
       window.location.href = "/";
     });
   }
+
+  var bouncingShoes = anime({
+    targets: '#shoe-target',
+    translateY: '15',
+    duration: 2000,
+    loop: true,
+    direction: 'alternate',
+    easing: 'linear'
+  });

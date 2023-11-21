@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='viewcart.css')}}">
+    <title>Cart</title>
+</head>
+<body>
+    <h3>
+        {% if user_name %}
+            Hello, {{ user_name }} <a href="/logout">Logout</a>
+        {% else %}
+            You are login. Please <a href="/login">Login</a>
+        {% endif %}
+    </h3>
+    <h1>Shopping Cart</h1>
+    <form action="{{ url_for('update_cart') }}" method="POST">
+        <table class="cart">
+            <thead>
+        <tr>
+            <th>Image</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Update Quantity</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for product in carts %}
+            <tr>
+                <td>
+                    <img class="product-img" src="{{ product['picture'] }}" alt="{{ product['picture'] }}">
+                </td>
+                <td>{{ product['id']}}</td>
+                <td>{{ product['name']}}</td>
+                <td>${{ product['price']}}</td>
+                <td>{{ product['quantity']}}</td>
+                <td>
+                    <input type="number" name="quantity-{{ product['id'] }}"
+                    min="[0]" value="{{ product['quantity'] }}" id="">
+                </td>
+                <td>
+                    <input type="checkbox" name="delete-{{ product['id'] }}" id="">
+                    <button type="submit" name="delete-{{ product['id'] }}">Delete</button>
+                </td>    
+            </tr>
+        {% endfor %}
+    </tbody>
+        </table>
+        <input type="submit" value="Update Cart">
+    </form>
+    <h1>Create Order</h1>
+    <form action="{{ url_for('proceed_cart') }}" method="post">
+        <input type="submit" value="Proceed Cart">
+    </form>
+
+    
+</body>
+</html>

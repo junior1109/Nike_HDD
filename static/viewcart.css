@@ -1,0 +1,126 @@
+/* Reset some default styles */
+/* Reset some default styles */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins' ,sans-serif;
+
+}
+h1, h3, form, table {
+    margin: 0;
+    padding: 0;
+}
+
+.delete-btn {
+    padding: 0 24px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: none;
+    border-radius: 32px;
+    color: #fff;
+}
+input[type="number"] {
+    width: 50px;
+    padding-left: 20px;
+    border-radius: 16px;
+    border: #b7b2b2 solid 1px;
+}
+/* #f7f7f7
+#111111
+#BABABA */
+/* Style the header and user information */
+
+.header {
+    width: 100%;
+    background-color: #f7f7f7;
+}
+.header p {
+    text-align: center;
+    color: #111111;
+    padding: 10px;
+    margin: 0;
+}
+
+.header p a {
+    color: #111111;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.container_cart {
+    padding: 0 50px;
+    margin-top: 100px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Style the cart table */
+table.cart {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table.cart th {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 10px;
+}
+
+table.cart td, table.cart th {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+table.cart .product-img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* Style the quantity input and delete button */
+table.cart input[type="number"] {
+    width: 50px;
+}
+
+table.cart input[type="checkbox"] {
+    margin: 0;
+}
+
+table.cart button[type="submit"] {
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Style the "Update Cart" and "Create Order" buttons */
+form[action="{{ url_for('update_cart')"] input[type="submit"], form[action="{{ url_for('proceed_cart')"] input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+/* Add more CSS rules as needed to style other elements on your page */
+.buy-btn {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+input[type="submit"] {
+    padding: 6px;
+}
+#update {
+    margin-right: 50px;
+}

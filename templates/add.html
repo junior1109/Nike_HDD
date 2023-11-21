@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='addcart.css') }}">
+</head>
+<body>
+    <h1>Search</h1>
+    <form method="POST" action="/searchData">
+        <input type="text" name="searchInput" id="" placeholder="Enter your search term">
+        <button type="submit">search</button>
+    </form>
+    <p>
+        {% if search_text %}
+        you search for: {{ search_text }}
+        <table class="cart">
+            <tr>
+                <th>ID</th>
+                <th>Product</th>
+                <th>Brand</th>
+                <th>Picture</th>
+                <th>Price</th>
+                <th>Add to cart</th>
+            </tr>
+            
+        </table>
+        <div class="menu">
+            <ul>
+                {% for row in table %}
+                <li>
+                    {{ row[0]}} -
+                    {{ row[1]}} -
+                    {{ row[2]}} -
+                    {{ row[4]}}
+                    <form action=".cart/add" method="POST">
+                        <input type="hidden" name="product_id" value="{{ row[0] }}">
+                        <input type="number" name="quantity" value="1" min="1">
+                        <button type="submit">Add to cart</button>
+                    </form> 
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </p>
+</body>
+</html>
